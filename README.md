@@ -6,4 +6,4 @@
 
 *  I tried to preserve as much of my original code as possible, but still had to make considerable changes to keep Hapi happy. <br/>
 
-*  As of 1/14/2017 @ time 13:40, I am still in process of debuggin my code, but resubmitting current code for evaluation. <br/>
+*  As of 1/14/2017 @ time 13:40, I am still in process of debugging my code, but submitting current code for evaluation. <br/>
