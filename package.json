@@ -1,0 +1,36 @@
+{
+  "name": "hapi-server",
+  "version": "1.0.0",
+  "description": "REST app with hapi.js & mongodb",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm run test && node server.js",
+    "pretest": "npm run lint",
+    "test": "mocha",
+    "test:watch": "mocha -- -w",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mizutombo/hapi-server.git"
+  },
+  "author": "Tom Shultz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mizutombo/hapi-server"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "hapi": "^16.1.0",
+    "mongoose": "^4.6.6"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "eslint": "^3.8.1",
+    "events": "^1.1.1",
+    "mocha": "^3.1.2",
+    "nodemon": "^1.11.0",
+    "rimraf": "^2.5.4"
+  }
+}
