@@ -1,4 +1,4 @@
-const Dog = require('../lib/models/dog-schema');
+const Dog = require('../routes/dogs');
 const assert = require('chai').assert;
 
 describe('Dog schema', () => {

@@ -4,7 +4,7 @@ const assert = chai.assert;
 chai.use(chaiHttp);
 
 // start db ... store connection ... clear db
-const connection = require('../lib/mongoose-setup');
+const connection = require('../mongoose-setup');
 
 const server = require('../server');
 
@@ -93,9 +93,9 @@ describe('dog', () => {
       .catch(done);
   });
 
-  it('change gender of crazyDog', done => { // passes test for PUT ... change gender of dog
+  it('change gender of crazyDog', done => { // passes test for PATCH ... change gender of dog
     request
-      .PUT(`/dogs/${crazyDog._id}`)
+      .PATCH(`/dogs/${crazyDog._id}`)
       .send({breed: 'Cattle Dog', color: 'multicolor', gender: 'F'})
       .then(res => {
         assert.ok(res.body._id);

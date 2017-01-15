@@ -1,7 +1,7 @@
 const mongoose = require ('mongoose');
 
-// URI pointer to MongoDB for 'pets'
-const dbURI = process.env.MONGODB_URI || 'mongodb://localhost/pets';
+// URI pointer to MongoDB for 'dogs'
+const dbURI = process.env.MONGODB_URI || 'mongodb://localhost/dogs';
 
 mongoose.Promise = Promise;
 mongoose.connect(dbURI);
